@@ -12,7 +12,7 @@ var car = {
 
 var array = [
     "string",
-    100,
+    150,
     [ "embed", 200 ],
     { car: "ford" },
     function(){ return "drive"; }  
