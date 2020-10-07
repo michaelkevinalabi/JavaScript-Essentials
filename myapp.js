@@ -1,6 +1,6 @@
 var classRegister = [ "Michael", "Kevin", "Alabi"];
 
-for( var i = 0; i < classRegister.length; i++ )
+for( var i = classRegister.length - 1; i >=0; i-- )
     {
         console.log( classRegister[i]);
     }
