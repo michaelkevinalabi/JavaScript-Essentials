@@ -1,6 +1,18 @@
-var classRegister = [ "Michael", "Kevin", "Alabi"];
+let elements = document.getElementsByName('cssProperty');
 
-for( var index in classRegister)
+let div = document.getElementById('modify');
+
+function set()
+{
+    
+    for( let index = 0; index < elements.length; index++ )
     {
-        console.log( classRegister[index]);
+        let cssProperty = elements[ index ].getAttribute('id');
+        
+        let cssValue = elements[ index ].value;
+        
+        div.style[ cssProperty ] = cssValue;
     }
+}
+
+document.getElementById('set').addEventListener('click',set);
