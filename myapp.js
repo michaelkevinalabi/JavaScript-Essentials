@@ -5,7 +5,7 @@ function Apple( color, weight )
 }
 
 Apple.prototype = {
-    eat : function(){ return "eat the apple"; },
+    eat : function(){ return this; },
     throw : function(){ return "throw the apple"; }
 };
 
