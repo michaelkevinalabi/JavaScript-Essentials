@@ -1,21 +1,14 @@
-var car = {
-    make: "volvo",
-    speed: 160,
-    engine: {
-        size: 2.0,
-        make: "bmw",
-        fuel: "petrol",
-        pistons: [ { maker: "BMW" }, { maker: "BMW2" } ]  
-    },
-    drive: function(){ return "drive"; }
+function Apple( color, weight )
+{
+    this.color = color;
+    this.weight = weight;
+}
+
+Apple.prototype = {
+    eat : function(){ return "eat the apple"; },
+    throw : function(){ return "throw the apple"; }
 };
 
-var array = [
-    "string",
-    150,
-    [ "embed", 200 ],
-    { car: "ford" },
-    function(){ return "drive"; }  
-];
-
-console.log( car.make );
+var apple1 = new Apple( "blue", 58 );
+var apple2 = new Apple( "black", 189 );
+var Apple3 = new Apple("white", 380 );
