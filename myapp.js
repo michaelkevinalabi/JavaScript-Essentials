@@ -1,4 +1,4 @@
-var motorsLeft = 0,
+var motorsLeft = 1,
     motorsRight = 0,
     greenMan = "no";
 
@@ -9,4 +9,8 @@ if( greenMan ==="yes" )
 else if( motorsLeft ===0 )
     {
         console.log( 'All clear! Cross the road')
+    }
+else
+    {
+        console.log("Stay where you are!");
     }
