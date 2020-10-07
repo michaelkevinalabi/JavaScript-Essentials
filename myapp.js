@@ -1,16 +1,6 @@
-var motorsLeft = 1,
-    motorsRight = 0,
-    greenMan = "no";
+var classRegister = [ "Michael", "Kevin", "Alabi"];
 
-if( greenMan ==="yes" )
+for( var i = 0; i < classRegister.length; i++ )
     {
-        console.log( 'cross the road' );
-    }
-else if( motorsLeft ===0 )
-    {
-        console.log( 'All clear! Cross the road')
-    }
-else
-    {
-        console.log("Stay where you are!");
+        console.log( classRegister[i]);
     }
